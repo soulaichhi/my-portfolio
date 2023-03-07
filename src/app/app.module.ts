@@ -8,9 +8,17 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ContactMeComponent } from './pages/contact-me/contact-me.component';
+import { ResumeComponent } from './pages/resume/resume.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent, HomeComponent, ContactMeComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    HomeComponent,
+    ContactMeComponent,
+    ResumeComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule, ButtonModule],
   providers: [],
   bootstrap: [AppComponent],

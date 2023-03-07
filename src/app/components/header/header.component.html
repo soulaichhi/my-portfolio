@@ -1,1 +1,40 @@
-<p>header works!</p>
+<header>
+  <div routerLink="/">
+    <img src="assets/logo_oeil.png" alt="" />
+  </div>
+  <div>
+    <nav>
+      <ul>
+        <li routerLink="/">Home</li>
+        <li>Projects</li>
+        <li routerLink="/contact">Contact Me</li>
+      </ul>
+    </nav>
+  </div>
+  <div class="icons">
+    <div>
+      <i
+        (click)="openLinkedin()"
+        class="pi pi-linkedin"
+        style="font-size: 2rem"
+      ></i>
+    </div>
+    <div>
+      <i
+        (click)="openGithub()"
+        class="pi pi-github"
+        style="font-size: 2rem"
+      ></i>
+    </div>
+    <div>
+      <button
+        routerLink="/resume"
+        pButton
+        pRipple
+        type="button"
+        label="Resume"
+        class="p-button-outlined p-button-rounded p-button-success"
+      ></button>
+    </div>
+  </div>
+</header>

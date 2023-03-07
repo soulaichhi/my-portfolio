@@ -1,0 +1,31 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2a285e;
+  color: aliceblue;
+  padding: 0px 40px;
+  img {
+    width: 50px;
+    cursor: pointer;
+  }
+  nav {
+    ul {
+      display: flex;
+      gap: 30px;
+      li {
+        list-style: none;
+        padding: 5px 20px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+  }
+  .icons {
+    display: flex;
+    gap: 20px;
+    i {
+      cursor: pointer;
+    }
+  }
+}
