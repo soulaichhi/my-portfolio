@@ -1,6 +1,8 @@
-header {
+.heading {
+  position: relative;
   display: flex;
   align-items: center;
+  height: 70px;
   justify-content: space-between;
   background-color: #2a285e;
   color: aliceblue;
@@ -9,7 +11,7 @@ header {
     width: 50px;
     cursor: pointer;
   }
-  nav {
+  .navigation {
     ul {
       display: flex;
       gap: 30px;
@@ -26,6 +28,74 @@ header {
     gap: 20px;
     i {
       cursor: pointer;
+    }
+    .burger-menu {
+      display: none;
+    }
+  }
+}
+.menu {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .heading {
+    //flex-direction: column;
+    padding: 5px 10px;
+    img {
+      // width: 50px;
+      // cursor: pointer;
+    }
+    .navigation {
+      display: none;
+      ul {
+        // display: flex;
+        // gap: 30px;
+        li {
+          // list-style: none;
+          // padding: 5px 20px;
+          // font-weight: 600;
+          // cursor: pointer;
+        }
+      }
+    }
+    .icons {
+      // display: flex;
+      gap: 10px;
+      .burger-menu {
+        display: inline;
+        padding: 0px 15px;
+      }
+    }
+  }
+  .menu-wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 70px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.8;
+    .menu {
+      //position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      list-style: none;
+      background-color: #294a6b;
+      padding: 10px 20px;
+      gap: 15px;
+      color: aliceblue;
+      margin: 0;
+
+      //color: aliceblue;
+      li {
+        cursor: pointer;
+        padding: 5px 15px;
+        border: lightgray 1px solid;
+        border-radius: 5px;
+      }
     }
   }
 }

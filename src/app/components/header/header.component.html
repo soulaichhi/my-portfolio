@@ -1,9 +1,9 @@
-<header>
+<header class="heading">
   <div routerLink="/">
     <img src="assets/logo_oeil.png" alt="" />
   </div>
   <div>
-    <nav>
+    <nav class="navigation">
       <ul>
         <li routerLink="/">Home</li>
         <li>Projects</li>
@@ -35,6 +35,17 @@
         label="Resume"
         class="p-button-outlined p-button-rounded p-button-success"
       ></button>
+      <div class="burger-menu" (click)="toggleMenu()">
+        <i *ngIf="!menuOpen" class="pi pi-bars" style="font-size: 2rem"></i>
+        <i *ngIf="menuOpen" class="pi pi-times" style="font-size: 2rem"></i>
+      </div>
     </div>
   </div>
 </header>
+<div *ngIf="menuOpen" class="menu-wrapper">
+  <ul class="menu">
+    <li routerLink="/">Home</li>
+    <li>Projects</li>
+    <li routerLink="/contact">Contact Me</li>
+  </ul>
+</div>
