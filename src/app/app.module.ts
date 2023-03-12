@@ -9,7 +9,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ContactMeComponent } from './pages/contact-me/contact-me.component';
 import { ResumeComponent } from './pages/resume/resume.component';
-
+import { BannerComponent } from './components/banner/banner.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,6 +18,7 @@ import { ResumeComponent } from './pages/resume/resume.component';
     HomeComponent,
     ContactMeComponent,
     ResumeComponent,
+    BannerComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, ButtonModule],
   providers: [],
