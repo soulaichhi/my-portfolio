@@ -10,6 +10,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { ContactMeComponent } from './pages/contact-me/contact-me.component';
 import { ResumeComponent } from './pages/resume/resume.component';
 import { BannerComponent } from './components/banner/banner.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { CarouselModule } from 'primeng/carousel';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,8 +21,9 @@ import { BannerComponent } from './components/banner/banner.component';
     ContactMeComponent,
     ResumeComponent,
     BannerComponent,
+    ProjectsComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, ButtonModule],
+  imports: [BrowserModule, AppRoutingModule, ButtonModule, CarouselModule],
   providers: [],
   bootstrap: [AppComponent],
 })

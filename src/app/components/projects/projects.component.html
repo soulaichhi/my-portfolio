@@ -1,0 +1,44 @@
+<div class="containner">
+  <p-carousel
+    [value]="projects"
+    styleClass="custom-carousel"
+    [numVisible]="3"
+    [numScroll]="1"
+    [circular]="true"
+    [autoplayInterval]="3000"
+    [responsiveOptions]="responsiveOptions"
+  >
+    <ng-template pTemplate="header"> </ng-template>
+    <ng-template let-project pTemplate="item">
+      <div class="project-item">
+        <div class="project-item-content">
+          <div class="mb-3">
+            <img
+              [src]="project.imgUrl"
+              [alt]="project.name"
+              class="project-image"
+            />
+          </div>
+          <div>
+            <h4 class="mb-1">{{ project.name }}</h4>
+            <p>{{ project.description }}</p>
+            <div class="car-buttons mt-5">
+              <p-button
+                type="button"
+                styleClass="p-button p-button-rounded mr-2"
+                icon="pi pi-github"
+                (onClick)="goToGithubUrl()"
+              ></p-button>
+              <p-button
+                type="button"
+                styleClass="p-button-success p-button-rounded mr-2"
+                icon="pi pi-eye"
+                (onClick)="viewProject()"
+              ></p-button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </p-carousel>
+</div>
